@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
     <MobileHeader profileImage={'/img/image.jfif'} username='HM'/>
-    <div className='px-4'>
+    <div className='max-w-2xl mx-auto px-4'>
       <h6 className="font-bold text-2xl">Latest job</h6>
       {data.map((item, key) => <CardJob key={key} {...item} loading={loading}/>)}
     </div>
